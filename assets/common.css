@@ -6,6 +6,18 @@
     font-size: (var(--base));
 }
 
+@media (min-width: 600px){
+    :root {
+        --base: 24px;
+    }
+}
+    
+
+
 body {
-    color: red;
+    padding: var(--base);
+}
+
+h1 {
+    font-size: var(--heading);
 }
