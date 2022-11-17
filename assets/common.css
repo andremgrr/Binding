@@ -5,3 +5,7 @@
     font-family: sans-serif;
     font-size: (var(--base));
 }
+
+body {
+    color: red;
+}
