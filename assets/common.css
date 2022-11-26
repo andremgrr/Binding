@@ -8,7 +8,7 @@
     --base: 16px;
     --heading: calc(var(--base) * 1.5);
     --ticket-width: 90vw;
-    --barcode-width: 140px;
+    --barcode-width: 160px;
     --barcode-top: 40px;
 
     --author-width: 17vw;
@@ -21,13 +21,21 @@
 
 }
 
+@media (min-width: 400px){
+    :root {
+        --base: 20px;
+        --barcode-width: 80px;
+        
+    }
+}
+
 /* desktop */
 
 @media (min-width: 850px){
     :root {
         --base: 20px;
         --ticket-width: 800px;
-        --barcode-width: 140px;
+        --barcode-width: 80px;
         --barcode-top: 10px;
 
         --author-width: 100px;
@@ -173,48 +181,6 @@ ul li:hover {
 }
 
 
-/*
-nav {
-    background-color: white;
-    height: 80px;
-    width: 100%;
-}
-
-.Title-logo{
-    color: black;
-    font-size: var(--heading);
-    line-height: 80px;
-    padding-left: var(--base);
-}
-
-nav ul{
-    float: right;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-nav ul li a{
-    color: black;
-    font-size: var(--base) * 0.7;
-    padding: 7 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
-
-ul li:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-*/
 
 /* start of code for main */
 
@@ -244,23 +210,6 @@ ul li:hover {
     padding-top: 3vh;
     padding-left: 3vh;
 }
-
-/*
-.bottom-ticket {
-    background-color: #FF7401;
-    height: calc(var(--base) * 1.5 );
-    width: var(--ticket-width);
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 0px 0px 8px 8px;
-}
-
-*/
-
-
-
-
-
 
 
 /* new code */
@@ -298,9 +247,6 @@ section.ticket {
     margin-left: -5px;
 }
 
-.reading {
-    
-}
 
 @media screen and (min-width: 800px) {
     .reading { 
